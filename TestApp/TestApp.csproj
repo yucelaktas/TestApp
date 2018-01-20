@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Manager\GenerateRandomItem.cs" />
+    <Compile Include="Manager\IGenerateRandomItem.cs" />
     <Compile Include="Manager\UserManager.cs" />
     <Compile Include="Model\Role.cs" />
     <Compile Include="Model\User.cs" />

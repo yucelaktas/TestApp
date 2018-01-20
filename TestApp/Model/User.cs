@@ -14,7 +14,7 @@ namespace TestApp.Model
 
         public short Age { get; set; }
 
-        public long PhoneNumber { get; set; }
+        public int PhoneNumber { get; set; }
 
         public Roles Role { get; set; }  
     }
