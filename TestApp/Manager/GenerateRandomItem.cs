@@ -10,7 +10,7 @@ namespace TestApp.Manager
 {
     public class GenerateRandomItem : IGenerateRandomItem
     {
-        public int generateRandomPhoneNumber()
+        public string generateRandomPhoneNumber()
         {
 
             Random r = new Random();
@@ -21,9 +21,8 @@ namespace TestApp.Manager
             {
                 phoneNum += r.Next(0, 9).ToString();
             }
-            int result= Convert.ToInt32(phoneNum);
 
-            return result;
+            return phoneNum;
 
         }
 
@@ -31,7 +30,11 @@ namespace TestApp.Manager
         {
             Random r = new Random();
 
-            return Convert.ToInt16((r.Next(0, 90)));
+            int ageInt = r.Next(0, 90);
+
+            short age = Convert.ToInt16(ageInt);
+
+            return age;
 
         }
 

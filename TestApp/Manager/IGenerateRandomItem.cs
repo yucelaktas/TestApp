@@ -9,7 +9,7 @@ namespace TestApp.Manager
 {
     public interface IGenerateRandomItem
     {
-        int generateRandomPhoneNumber();
+        string generateRandomPhoneNumber();
 
         short generateRandomAge();
 

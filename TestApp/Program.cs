@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using TestApp.Manager;
@@ -12,7 +13,8 @@ namespace TestApp
     {
         static void Main(string[] args)
         {
-           UserManager uManager = new UserManager();
+
+           UserManager uManager = new UserManager(new GenerateRandomItem());
 
             List<User> users=uManager.AddRandomUser(5);
 
