@@ -69,11 +69,11 @@ namespace TestApp.Test.GenerateRandomItemTests
         {
             _mockedGenerateRandomItem
                 .Setup(x => x.generateRandomPhoneNumber())
-                .Returns(1234567890);
+                .Returns("1234567890");
 
-            int result = _userManager.AddRandomUser(1).FirstOrDefault().PhoneNumber;
+            string result = _userManager.AddRandomUser(1).FirstOrDefault().PhoneNumber;
 
-            result.Should().Be(1234567890);
+            result.Should().Be("1234567890");
         }
 
         [Test]
